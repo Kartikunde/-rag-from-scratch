@@ -20,13 +20,19 @@ python3 rag_system.py
 ```
 
 ## How it works
-
 ```
-documents  →  chunk  →  embed  →  index (FAISS)
-                                        │
-query  →  embed  →  search top-k  ──────┘
-                        │
-              context + query → prompt → LLM → grounded answer
+flowchart TD
+    A[Documents .txt files] --> B[Chunk into smaller pieces]
+    B --> C[Embed chunks into vectors]
+    C --> D[(Store vectors in FAISS index)]
+    
+    E[User question] --> F[Embed the question]
+    F --> G[Search index for closest chunks]
+    D --> G
+    G --> H[Top matching chunks retrieved]
+    H --> I[Build prompt: question + retrieved chunks]
+    I --> J[Send to Claude API]
+    J --> K[Grounded answer returned]
 ```
 
 **1. Chunking** (`chunk_text`) — splits documents into overlapping word windows. Overlap keeps a sentence from being severed across a chunk boundary and becoming unretrievable.
