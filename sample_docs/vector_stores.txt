@@ -1,0 +1,8 @@
+A vector store indexes embeddings so that, given a query vector, it can quickly
+find the most similar vectors in the collection. FAISS, developed by Meta, is
+a popular open-source library for efficient similarity search over dense
+vectors, and it can run entirely locally with no external server. ChromaDB is
+another popular option that adds a lightweight database layer with metadata
+filtering and persistence on top of a similar underlying search. Both are
+commonly used as the retrieval backend in a RAG system, alongside managed
+options like Pinecone or Weaviate for production-scale deployments.

@@ -1,0 +1,8 @@
+Chunking is the process of splitting long documents into smaller pieces before
+embedding them. Chunk size matters: chunks that are too large dilute the
+embedding with unrelated content, while chunks that are too small lose context.
+A common strategy is to use a fixed word or token count per chunk with some
+overlap between consecutive chunks. Overlap prevents an answer-bearing sentence
+from being split across a chunk boundary, which would otherwise make it
+difficult for either half-chunk to be retrieved for a query about that
+sentence.

@@ -1,0 +1,16 @@
+# Core (required to run rag_system.py as-is)
+numpy
+faiss-cpu
+scikit-learn
+
+# Optional: real semantic embeddings instead of TF-IDF
+# sentence-transformers
+
+# Optional: real LLM generation instead of EchoLLM stub
+# anthropic
+
+# Optional: if you'd rather use LangChain's wrappers around the same pieces
+# (retrieval chains, ChromaDB, document loaders) instead of the raw classes here
+# langchain
+# langchain-community
+# chromadb
