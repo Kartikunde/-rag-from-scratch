@@ -9,7 +9,7 @@ pip install -r requirements.txt
 python3 rag_system.py
 ```
 
-This indexes the three sample docs in `sample_docs/`, runs three test queries, and prints the retrieved chunks plus the assembled prompt. Without an API key it uses `EchoLLM`, a stub that shows you exactly what would be sent to a real model — so you can verify the whole pipeline works before spending any API credits.
+This indexes the three sample docs in `sample_docs/`, runs three test queries, and prints the retrieved chunks plus the assembled prompt. Without an API key it uses `EchoLLM`, a stub that shows you exactly what would be sent to a real model so you can verify the whole pipeline works before spending any API credits.
 
 To get real generated answers:
 
