@@ -20,7 +20,8 @@ python3 rag_system.py
 ```
 
 ## How it works
-```
+
+```mermaid
 flowchart TD
     A[Documents .txt files] --> B[Chunk into smaller pieces]
     B --> C[Embed chunks into vectors]
