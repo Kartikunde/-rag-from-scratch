@@ -65,3 +65,6 @@ Each piece is an isolated class (`EmbeddingModel`, `VectorStore`, `LLM`) specifi
 - **Hybrid search**: combine the TF-IDF sparse score with dense embedding similarity for better recall on rare keywords (product codes, names) that dense embeddings sometimes miss.
 - **Re-ranking**: add a cross-encoder re-ranker (e.g. `cross-encoder/ms-marco-MiniLM-L-6-v2`) after retrieval to reorder the top-k by relevance before generation.
 - **Citations**: the prompt already numbers sources (`[1]`, `[2]`, ...) — ask the LLM to cite them inline for traceable answers.
+
+  <img width="1917" height="1018" alt="Screenshot 2026-08-27 111415" src="https://github.com/user-attachments/assets/38c4cd18-c204-4d82-adf4-c5bc2c2dce2b" />
+
